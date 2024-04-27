@@ -1,9 +1,10 @@
 name: deploy asg
 on:
   workflow_run:
-  - "deploy vpc"
+   workflows:
+    - "deploy vpc"
   type:
-  - completed
+    - completed
  
 jobs:
   build:
