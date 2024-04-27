@@ -1,6 +1,6 @@
 erraform {
   backend "s3" {
-    bucket = ""
+    bucket = "sdlc-terraform-backend-ostafon1"
     key    = "path/to/my/vpc"
     region = "us-east-1"
   }

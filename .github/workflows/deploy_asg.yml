@@ -1,9 +1,9 @@
 name: deploy asg
 on:
-  push:
-    paths:
-     - "asg/**"
-
+  workflow_run:
+  - "deploy vpc"
+  type:
+  - completed
  
 jobs:
   build:
